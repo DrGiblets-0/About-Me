@@ -1,0 +1,38 @@
+/* Base */
+#body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #0f172a; background: #ffffff; }
+site-header, page { display: block; }
+site-header { padding: 32px 24px; background: #ffffff; border-bottom: 1px solid #ffffff; overflow: visible; z-index: 1; }
+site-header h1 { margin: 0 0 4px 0; }
+.role { margin: 0; color: #000000; }
+
+page { max-width: 980px; margin: 24px auto; padding: 0 16px; position: relative; }
+
+#left { display: inline-block; width: 28%; vertical-align: top; position: relative; }
+#right { display: inline-block; width: 70%; margin-left: 2%; vertical-align: top; }
+
+page { font-size: 0; }
+page > * { font-size: 16px; }
+
+.avatar {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+	border: 4px solid #fff;
+	box-shadow: 0 8px 24px rgba(16,24,40,0.12);
+	background: #e2e8f0;
+	margin: 0 auto 12px auto;
+}
+
+#left .card:first-of-type { margin-top: 12px; }
+
+.card { border: 1px solid #e5e7eb; padding: 16px; margin: 16px 0; background: #ffffff; box-shadow: 0 1px 0 rgba(0,0,0,0.03); border-radius: 8px; }
+.card h2 { margin: 0 0 8px 0; color: #111827; display: inline-block; padding: 6px 10px; border: 1px solid #e5e7eb; border-radius: 6px; background: #f8fafc; }
+.card p, .card li, .card small { color: #334155; }
+
+h1 { font-size: 32px; color: #0f172a; }
+h2 { font-size: 20px; }
+p { font-size: 16px; line-height: 1.6; }
+li { margin: 4px 0; }
+
+#site-footer { text-align: center; padding: 20px; border-top: 1px solid #e5e7eb; color: #64748b; margin-top: 32px; }
