@@ -3,38 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Bio</title>
+    <title>Biography</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <!-- give the body an id so the stylesheet's #body selector matches -->
-    <div id="body">
-      <site-header>
+    <div id="page-root">
+      <header class="site-header">
         <h1>Dan's Bio</h1>
         <p class="role">Student: Web Beginner</p>
-      </site-header>
+      </header>
 
-      <page>
-        <div id="right">
+      <main class="container">
+        <aside class="sidebar">
           <div class="card">
-            <img class="avatar" src="IMG_7095.jpg" alt="Profile picture of Dan Student" />
+            <img class="avatar" src="IMG_7095.jpg" alt="Profile picture of Dan" />
           </div>
-        </div>
 
-        <div id="right">
           <div class="card">
             <h2>Contact</h2>
-            <p>Email: email@email.com</p>
+            <p>Email: daniel.josiah.lewis@email.com</p>
           </div>
+        </aside>
 
+        <section class="content">
           <div class="card">
             <h2>About</h2>
-            <p>CSS is so much fun.</p>
+            <p>Navy Veteran, Search and Rescue Professional, and aspiring Penetration Tester with a proven record of excelling under high-pressure environments and adapting to diverse technical roles. Over nearly a decade in the United States Navy, I served as a Rescue Swimmer, Hoist Operator, and Crew Chief, executing life-saving missions and training teams to perform at elite levels. My experience also includes payload operations and tactical surveillance in support of international operations, where I contributed to successful interdictions in counter-narcotics. 
+
+Beyond the military, I’ve applied my discipline and teamwork in forestry, tree service, and real estate, consistently demonstrating adaptability, technical proficiency, and leadership in demanding industries. These roles reinforced my ability to quickly master new skillsets, maintain operational safety, and collaborate across diverse teams.
+
+I am now channeling that same drive and problem-solving ability into cybersecurity. Currently pursuing a Bachelor’s in Cybersecurity with a concentration in Privacy and Surveillance at American Military University, I am building hands-on skills through platforms like TryHackMe (PT1) and Hack The Box (CBBH). In addition, I’m expanding my technical foundation through a full-stack developer bootcamp to strengthen my understanding of web applications, an essential step toward my career goal of becoming a penetration tester.
+
+I thrive in environments where precision, resilience, and critical thinking are essential. My mission is to leverage my operational background, technical training, and passion for security to protect organizations against evolving cyber threats. 
+            </p>
           </div>
 
           <div class="card">
             <h2>Skills</h2>
-            <p>HTML, CSS, JavaScript</p>
+            <p>HTML, CSS, JavaScript, Bash</p>
           </div>
 
           <div class="card">
@@ -44,9 +50,12 @@
               <li><a href="https://github.com/DrGiblets-0">GitHub</a></li>
             </ul>
           </div>
-        </div>
+        </section>
+      </main>
 
-      </page>
+      <footer id="site-footer">
+        <small>© Dan Lewis</small>
+      </footer>
     </div>
   </body>
 </html>
